@@ -1,0 +1,102 @@
+/* style.css */
+
+* {
+    box-sizing: border-box;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #071126 0%, #07172b 100%);
+    color: #e6eef8;
+}
+
+.card {
+    width: 92%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    margin: 0 0 6px 0;
+    font-size: 22px;
+}
+
+p {
+    margin: 0 0 14px 0;
+    color: #a9c0df;
+}
+
+.controls {
+    margin-bottom: 10px;
+}
+
+button#scanBtn {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    background: linear-gradient(90deg, #16a34a, #10b981);
+    color: white;
+}
+
+.progress-bar {
+    margin: 8px 0 16px 0;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 8px;
+    color: #cfeffd;
+}
+
+.messages {
+    margin-top: 8px;
+    background: rgba(0, 0, 0, 0.18);
+    padding: 12px;
+    border-radius: 8px;
+    min-height: 150px;
+    color: #dbeafe;
+    overflow: auto;
+}
+
+.device {
+    padding: 8px 10px;
+    background: rgba(255, 255, 255, 0.02);
+    margin-bottom: 8px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.device .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.device .ip {
+    font-weight: 700;
+}
+
+.device .host {
+    font-size: 13px;
+    color: #9fc3ff;
+}
+
+.device .right {
+    font-size: 12px;
+    color: #cbe4ff;
+}
+
+#status {
+    font-size: 13px;
+    color: #93c5fd;
+    margin-bottom: 8px;
+}
